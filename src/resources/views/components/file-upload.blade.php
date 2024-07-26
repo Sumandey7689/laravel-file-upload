@@ -68,13 +68,11 @@
 
 
 <script>
-    document.addEventListener("DOMContentLoaded", function() {
-        var fileInput = document.getElementById("{{ $id }}");
-        fileInput.addEventListener("change", function() {
-            var t = this.value;
-            var labelText = t.split('\\').pop();
-            document.getElementById("{{ $id }}_label").textContent = labelText;
-            document.getElementById("{{ $id }}_validate").value = labelText;
-        });
+    var fileInput = document.getElementById("{{ $id }}");
+    fileInput.addEventListener("change", function() {
+        var t = this.value;
+        var labelText = t.split('\\').pop();
+        document.getElementById("{{ $id }}_label").textContent = labelText;
+        document.getElementById("{{ $id }}_validate").value = labelText;
     });
 </script>
