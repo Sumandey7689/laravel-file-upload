@@ -1,0 +1,21 @@
+{
+    "name": "sumandey7689/laravel-file-upload",
+    "description": "A file upload component for Laravel",
+    "type": "library",
+    "require": {
+        "php": ">=7.3",
+        "illuminate/support": "^7.0|^8.0|^9.0|^10.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Sumandey7689\\LaravelFileUpload\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Sumandey7689\\LaravelFileUpload\\FileUploadServiceProvider"
+            ]
+        }
+    }
+}
